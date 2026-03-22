@@ -1,0 +1,676 @@
+{
+  "categories": [
+    {
+      "id": "sandwich",
+      "name": "Sandwich",
+      "description": "Grilled signatures layered with sauces, herbs, and premium fillings.",
+      "accent": "from-[#f7e5b8] via-[#fff3dd] to-[#f2d59c]",
+      "sortOrder": 1
+    },
+    {
+      "id": "burger",
+      "name": "Burger",
+      "description": "Comfort-first burgers with indulgent crunch and bold sauces.",
+      "accent": "from-[#f3d0b4] via-[#fff0df] to-[#e6b786]",
+      "sortOrder": 2
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza",
+      "description": "Artisan-style crusts baked with rich cheese pulls and gourmet toppings.",
+      "accent": "from-[#f0c79a] via-[#fff2e3] to-[#d8a060]",
+      "sortOrder": 3
+    },
+    {
+      "id": "hot-dog",
+      "name": "Hot Dog",
+      "description": "Street-food energy elevated with bakery-style finesse.",
+      "accent": "from-[#f8dbb7] via-[#fff1e6] to-[#efbf83]",
+      "sortOrder": 4
+    },
+    {
+      "id": "momos",
+      "name": "Momos",
+      "description": "Soft, juicy dumplings with signature house spice blends.",
+      "accent": "from-[#e6d0b9] via-[#fff5ef] to-[#d4a97d]",
+      "sortOrder": 5
+    },
+    {
+      "id": "maggi",
+      "name": "Maggi",
+      "description": "Luxury comfort bowls finished with cheese, butter, and spice.",
+      "accent": "from-[#efd7ae] via-[#fff6e0] to-[#e0ba6f]",
+      "sortOrder": 6
+    },
+    {
+      "id": "kulcha",
+      "name": "Kulcha",
+      "description": "Toasted kulchas with stuffed fillings and buttery finishes.",
+      "accent": "from-[#f1d7bd] via-[#fff3ea] to-[#e3b17d]",
+      "sortOrder": 7
+    },
+    {
+      "id": "patties",
+      "name": "Patties",
+      "description": "Bakery classics with flaky textures and savory fillings.",
+      "accent": "from-[#e9dcc9] via-[#fff7f0] to-[#d9b690]",
+      "sortOrder": 8
+    },
+    {
+      "id": "shakes-beverages",
+      "name": "Shakes & Beverages",
+      "description": "Creamy shakes, coolers, and coffee crafted for indulgent breaks.",
+      "accent": "from-[#f5dec0] via-[#fff7eb] to-[#d7ad74]",
+      "sortOrder": 9
+    },
+    {
+      "id": "cakes-pastries",
+      "name": "Cakes & Pastries",
+      "description": "Designer eggless cakes, celebration tiers, pastries, and cookies.",
+      "accent": "from-[#f6e6c7] via-[#fff9ef] to-[#d5af67]",
+      "sortOrder": 10
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-sandwich-truffle-club",
+      "slug": "truffle-veg-club",
+      "name": "Truffle Veg Club",
+      "categoryId": "sandwich",
+      "description": "Grilled multigrain with herbed mayo, truffle notes, and crisp vegetables.",
+      "price": 179,
+      "badge": "Chef's pick",
+      "tags": [
+        "veg",
+        "grilled",
+        "premium"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "12 mins"
+    },
+    {
+      "id": "prod-sandwich-paneer-pesto",
+      "slug": "paneer-pesto-melt",
+      "name": "Paneer Pesto Melt",
+      "categoryId": "sandwich",
+      "description": "Soft paneer, basil pesto, cheddar, and roasted peppers in a golden toastie.",
+      "price": 189,
+      "tags": [
+        "veg",
+        "paneer",
+        "cheesy"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "14 mins"
+    },
+    {
+      "id": "prod-sandwich-garden-grill",
+      "slug": "garden-grill-sandwich",
+      "name": "Garden Grill Sandwich",
+      "categoryId": "sandwich",
+      "description": "A vibrant veggie stack with tangy dressing and a crisp finish.",
+      "price": 169,
+      "tags": [
+        "veg",
+        "fresh"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "10 mins"
+    },
+    {
+      "id": "prod-burger-smoky-aloo",
+      "slug": "smoky-aloo-royale",
+      "name": "Smoky Aloo Royale",
+      "categoryId": "burger",
+      "description": "Spiced potato patty, lettuce, burger sauce, and toasted brioche bun.",
+      "price": 149,
+      "badge": "Popular",
+      "tags": [
+        "veg",
+        "best seller"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "15 mins"
+    },
+    {
+      "id": "prod-burger-peri-paneer",
+      "slug": "peri-peri-paneer-burger",
+      "name": "Peri Peri Paneer Burger",
+      "categoryId": "burger",
+      "description": "Paneer tikka patty with peri mayo, slaw, and crisp onions.",
+      "price": 169,
+      "tags": [
+        "paneer",
+        "spicy"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "15 mins"
+    },
+    {
+      "id": "prod-burger-maharaja",
+      "slug": "maharaja-crunch-burger",
+      "name": "Maharaja Crunch Burger",
+      "categoryId": "burger",
+      "description": "Layered veg patty, cheese, crunchy onions, and smoky special sauce.",
+      "price": 189,
+      "tags": [
+        "signature",
+        "cheese"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "16 mins"
+    },
+    {
+      "id": "prod-pizza-margherita",
+      "slug": "golden-margherita-pizza",
+      "name": "Golden Margherita Pizza",
+      "categoryId": "pizza",
+      "description": "Classic cheese pizza with basil, pomodoro, and a soft artisan crust.",
+      "price": 249,
+      "badge": "Freshly baked",
+      "tags": [
+        "veg",
+        "cheesy"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "18 mins"
+    },
+    {
+      "id": "prod-pizza-farmhouse",
+      "slug": "farmhouse-gold-pizza",
+      "name": "Farmhouse Gold Pizza",
+      "categoryId": "pizza",
+      "description": "Bell peppers, sweet corn, onion, olives, and loaded mozzarella.",
+      "price": 299,
+      "tags": [
+        "veg",
+        "loaded"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "20 mins"
+    },
+    {
+      "id": "prod-pizza-paneer",
+      "slug": "paneer-tandoori-pizza",
+      "name": "Paneer Tandoori Pizza",
+      "categoryId": "pizza",
+      "description": "Smoked paneer, tandoori glaze, onions, and a fiery cheese blend.",
+      "price": 329,
+      "tags": [
+        "paneer",
+        "signature"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "20 mins"
+    },
+    {
+      "id": "prod-hotdog-classic",
+      "slug": "classic-cheese-hot-dog",
+      "name": "Classic Cheese Hot Dog",
+      "categoryId": "hot-dog",
+      "description": "Soft roll with cheesy filling, caramelized onion, and bakery relish.",
+      "price": 139,
+      "tags": [
+        "veg",
+        "cheese"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "11 mins"
+    },
+    {
+      "id": "prod-hotdog-chilli-paneer",
+      "slug": "chilli-paneer-hot-dog",
+      "name": "Chilli Paneer Hot Dog",
+      "categoryId": "hot-dog",
+      "description": "Spicy paneer cubes, peppers, and creamy chipotle sauce.",
+      "price": 159,
+      "tags": [
+        "paneer",
+        "spicy"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "12 mins"
+    },
+    {
+      "id": "prod-hotdog-mexican-corn",
+      "slug": "mexican-corn-hot-dog",
+      "name": "Mexican Corn Hot Dog",
+      "categoryId": "hot-dog",
+      "description": "Sweet corn, jalapeno, paprika butter, and cheese drizzle.",
+      "price": 149,
+      "tags": [
+        "corn",
+        "loaded"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "12 mins"
+    },
+    {
+      "id": "prod-momos-steamed",
+      "slug": "steamed-garden-momos",
+      "name": "Steamed Garden Momos",
+      "categoryId": "momos",
+      "description": "Juicy vegetable momos served with signature red chutney.",
+      "price": 139,
+      "tags": [
+        "veg",
+        "steamed"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "14 mins"
+    },
+    {
+      "id": "prod-momos-tandoori",
+      "slug": "tandoori-momos",
+      "name": "Tandoori Momos",
+      "categoryId": "momos",
+      "description": "Smoky, char-finished momos tossed in creamy tandoori masala.",
+      "price": 169,
+      "badge": "House favorite",
+      "tags": [
+        "smoky",
+        "spicy"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "16 mins"
+    },
+    {
+      "id": "prod-momos-schezwan",
+      "slug": "schezwan-fried-momos",
+      "name": "Schezwan Fried Momos",
+      "categoryId": "momos",
+      "description": "Crisp-fried momos with garlic, chilli, and house-made schezwan glaze.",
+      "price": 179,
+      "tags": [
+        "fried",
+        "spicy"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "16 mins"
+    },
+    {
+      "id": "prod-maggi-butter",
+      "slug": "butter-herb-maggi",
+      "name": "Butter Herb Maggi",
+      "categoryId": "maggi",
+      "description": "Comfort noodles finished with butter, herbs, and cracked pepper.",
+      "price": 129,
+      "tags": [
+        "comfort",
+        "veg"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "9 mins"
+    },
+    {
+      "id": "prod-maggi-cheese",
+      "slug": "cheese-burst-maggi",
+      "name": "Cheese Burst Maggi",
+      "categoryId": "maggi",
+      "description": "Silky cheese sauce folded into hot noodles with chilli flakes.",
+      "price": 149,
+      "tags": [
+        "cheesy",
+        "loaded"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "10 mins"
+    },
+    {
+      "id": "prod-maggi-tandoori",
+      "slug": "tandoori-veg-maggi",
+      "name": "Tandoori Veg Maggi",
+      "categoryId": "maggi",
+      "description": "A spiced-up noodle bowl with peppers, onions, and tandoori masala.",
+      "price": 159,
+      "tags": [
+        "spicy",
+        "veg"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "10 mins"
+    },
+    {
+      "id": "prod-kulcha-amritsari",
+      "slug": "amritsari-kulcha-basket",
+      "name": "Amritsari Kulcha Basket",
+      "categoryId": "kulcha",
+      "description": "Twin kulchas with masala potato stuffing and mint yogurt.",
+      "price": 149,
+      "tags": [
+        "stuffed",
+        "veg"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "14 mins"
+    },
+    {
+      "id": "prod-kulcha-paneer",
+      "slug": "paneer-masala-kulcha",
+      "name": "Paneer Masala Kulcha",
+      "categoryId": "kulcha",
+      "description": "Soft kulcha loaded with paneer filling and brushed with butter.",
+      "price": 169,
+      "badge": "Best seller",
+      "tags": [
+        "paneer",
+        "buttery"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "14 mins"
+    },
+    {
+      "id": "prod-kulcha-chilli-cheese",
+      "slug": "chilli-cheese-kulcha",
+      "name": "Chilli Cheese Kulcha",
+      "categoryId": "kulcha",
+      "description": "A melty, spicy kulcha with cheese, green chilli, and herbs.",
+      "price": 179,
+      "tags": [
+        "cheese",
+        "spicy"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "13 mins"
+    },
+    {
+      "id": "prod-patties-veg",
+      "slug": "classic-veg-patty",
+      "name": "Classic Veg Patty",
+      "categoryId": "patties",
+      "description": "Flaky pastry with a comforting vegetable masala filling.",
+      "price": 79,
+      "tags": [
+        "bakery classic",
+        "veg"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "6 mins"
+    },
+    {
+      "id": "prod-patties-paneer",
+      "slug": "paneer-salsa-patty",
+      "name": "Paneer Salsa Patty",
+      "categoryId": "patties",
+      "description": "Buttery layered pastry packed with paneer and tangy salsa seasoning.",
+      "price": 99,
+      "tags": [
+        "paneer",
+        "flaky"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "7 mins"
+    },
+    {
+      "id": "prod-patties-mushroom",
+      "slug": "mushroom-pepper-patty",
+      "name": "Mushroom Pepper Patty",
+      "categoryId": "patties",
+      "description": "A rich mushroom filling with black pepper and crisp pastry leaves.",
+      "price": 109,
+      "tags": [
+        "mushroom",
+        "savory"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "7 mins"
+    },
+    {
+      "id": "prod-shake-vanilla",
+      "slug": "vanilla-bean-shake",
+      "name": "Vanilla Bean Shake",
+      "categoryId": "shakes-beverages",
+      "description": "A creamy vanilla shake topped with velvety froth and cookie dust.",
+      "price": 149,
+      "tags": [
+        "cool",
+        "sweet"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "8 mins"
+    },
+    {
+      "id": "prod-shake-belgian",
+      "slug": "belgian-chocolate-shake",
+      "name": "Belgian Chocolate Shake",
+      "categoryId": "shakes-beverages",
+      "description": "Thick chocolate shake with deep cocoa notes and a dessert finish.",
+      "price": 169,
+      "badge": "Signature",
+      "tags": [
+        "chocolate",
+        "rich"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "8 mins"
+    },
+    {
+      "id": "prod-shake-rose",
+      "slug": "rose-pistachio-cooler",
+      "name": "Rose Pistachio Cooler",
+      "categoryId": "shakes-beverages",
+      "description": "A fragrant cooler with rose syrup, pistachio, and chilled milk.",
+      "price": 159,
+      "tags": [
+        "refreshing",
+        "festive"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "6 mins"
+    },
+    {
+      "id": "prod-shake-cold-coffee",
+      "slug": "cold-coffee-velvet",
+      "name": "Cold Coffee Velvet",
+      "categoryId": "shakes-beverages",
+      "description": "Silky cold coffee with ice cream and caramel coffee dust.",
+      "price": 149,
+      "tags": [
+        "coffee",
+        "smooth"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "6 mins"
+    },
+    {
+      "id": "prod-cake-rainbow",
+      "slug": "rainbow-luxe-designer-cake",
+      "name": "Rainbow Luxe Designer Cake",
+      "categoryId": "cakes-pastries",
+      "description": "A pastel designer cake crafted for birthdays, baby showers, and luxe parties.",
+      "price": 1899,
+      "image": "/brand-assets/cake-rainbow-luxe.webp",
+      "badge": "Designer cake",
+      "tags": [
+        "eggless",
+        "designer",
+        "party"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "4 hrs"
+    },
+    {
+      "id": "prod-cake-dragon",
+      "slug": "dragon-ball-celebration-cake",
+      "name": "Dragon Ball Celebration Cake",
+      "categoryId": "cakes-pastries",
+      "description": "Theme-crafted fondant cake for unforgettable birthdays and fandom celebrations.",
+      "price": 2499,
+      "image": "/brand-assets/cake-dragon-ball.webp",
+      "badge": "Theme cake",
+      "tags": [
+        "birthday",
+        "fondant",
+        "custom"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "6 hrs"
+    },
+    {
+      "id": "prod-cake-dinosaur",
+      "slug": "dino-adventure-cake",
+      "name": "Dino Adventure Cake",
+      "categoryId": "cakes-pastries",
+      "description": "A playful custom designer cake for milestone birthdays and themed parties.",
+      "price": 2299,
+      "image": "/brand-assets/cake-dinosaur.webp",
+      "tags": [
+        "custom",
+        "kids",
+        "eggless"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "6 hrs"
+    },
+    {
+      "id": "prod-cake-anniversary",
+      "slug": "golden-anniversary-heart-cake",
+      "name": "Golden Anniversary Heart Cake",
+      "categoryId": "cakes-pastries",
+      "description": "Elegant floral detailing and gold accents for anniversaries and family celebrations.",
+      "price": 2599,
+      "image": "/brand-assets/cake-anniversary-gold.webp",
+      "badge": "Luxury tier",
+      "tags": [
+        "anniversary",
+        "premium",
+        "gold"
+      ],
+      "featured": true,
+      "available": true,
+      "prepTime": "6 hrs"
+    },
+    {
+      "id": "prod-cake-wedding",
+      "slug": "wedding-love-cake",
+      "name": "Wedding Love Cake",
+      "categoryId": "cakes-pastries",
+      "description": "Romantic tiered cake with sculpted details for engagements and special proposals.",
+      "price": 2799,
+      "image": "/brand-assets/cake-wedding-love.webp",
+      "tags": [
+        "wedding",
+        "romantic",
+        "custom"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "8 hrs"
+    },
+    {
+      "id": "prod-cake-avengers",
+      "slug": "avengers-photo-cake",
+      "name": "Avengers Photo Cake",
+      "categoryId": "cakes-pastries",
+      "description": "A rich celebration slab with edible print artwork and birthday personalization.",
+      "price": 1599,
+      "image": "/brand-assets/cake-avengers.webp",
+      "tags": [
+        "photo cake",
+        "birthday",
+        "kids"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "3 hrs"
+    },
+    {
+      "id": "prod-cake-cupcake-box",
+      "slug": "proposal-cupcake-box",
+      "name": "Proposal Cupcake Box",
+      "categoryId": "cakes-pastries",
+      "description": "A romantic cupcake-and-mini-cake box for surprises, dates, and gifting.",
+      "price": 799,
+      "image": "/brand-assets/cake-cupcake-proposal.webp",
+      "tags": [
+        "cupcake",
+        "gift",
+        "custom"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "2 hrs"
+    },
+    {
+      "id": "prod-pastry-truffle",
+      "slug": "belgian-truffle-slice",
+      "name": "Belgian Truffle Slice",
+      "categoryId": "cakes-pastries",
+      "description": "Silky chocolate pastry finished with ganache and luxe cocoa dusting.",
+      "price": 159,
+      "image": "/brand-assets/display-case.webp",
+      "tags": [
+        "pastry",
+        "chocolate"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "Ready today"
+    },
+    {
+      "id": "prod-pastry-fruit",
+      "slug": "fresh-fruit-pastry",
+      "name": "Fresh Fruit Pastry",
+      "categoryId": "cakes-pastries",
+      "description": "Soft sponge, fresh cream, and bright fruit notes for a lighter bite.",
+      "price": 149,
+      "image": "/brand-assets/display-case.webp",
+      "tags": [
+        "pastry",
+        "fresh"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "Ready today"
+    },
+    {
+      "id": "prod-cookie-box",
+      "slug": "eggless-cookie-gift-box",
+      "name": "Eggless Cookie Gift Box",
+      "categoryId": "cakes-pastries",
+      "description": "Buttery handcrafted cookies packed for festive gifting and tea-time indulgence.",
+      "price": 349,
+      "image": "/brand-assets/menu-board-specialties.webp",
+      "tags": [
+        "cookies",
+        "eggless"
+      ],
+      "featured": false,
+      "available": true,
+      "prepTime": "Ready today"
+    }
+  ],
+  "orders": [],
+  "bookings": []
+}

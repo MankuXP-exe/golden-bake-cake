@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fbf5ea;
+  --foreground: #1d160f;
+  --gold: #d4af37;
+  --gold-soft: #f4ddb0;
+  --cream: #fffaf1;
+  --brown: #6a4d2f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top, rgba(244, 221, 176, 0.75), transparent 38%),
+    linear-gradient(180deg, #f8f0e3 0%, #fffaf3 30%, #f7efe3 70%, #ead8b7 100%);
+  color: var(--foreground);
+  font-family: var(--font-body), sans-serif;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.28);
+  color: #1c140d;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+.luxury-shell {
+  position: relative;
+  overflow-x: clip;
+}
+
+.luxury-shell::before {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.25;
+  content: "";
+}
+
+.section-shell {
+  margin-inline: auto;
+  max-width: 80rem;
+  padding: 5.5rem 1rem;
+}
+
+.eyebrow {
+  font-family: var(--font-cinzel), serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-family: var(--font-display), serif;
+  font-size: clamp(2.5rem, 4vw, 4.5rem);
+  line-height: 0.98;
+  color: #1d160f;
+}
+
+.section-copy {
+  font-size: 1rem;
+  line-height: 1.9;
+  color: rgba(55, 41, 27, 0.78);
+}
+
+.glass-card {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 80px rgba(20, 13, 8, 0.18);
+  backdrop-filter: blur(22px);
+}
+
+.floating-card {
+  animation: drift 7s ease-in-out infinite;
+}
+
+.luxury-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 3.5rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #f0d37f, #d4af37 60%, #b48811);
+  padding: 0 1.4rem;
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #21170d;
+  box-shadow: 0 16px 35px rgba(161, 122, 28, 0.28);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    filter 180ms ease;
+}
+
+.luxury-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 42px rgba(161, 122, 28, 0.34);
+  filter: saturate(1.06);
+}
+
+.luxury-button.ghost {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: none;
+}
+
+.luxury-button.ghost.light {
+  background: rgba(255, 255, 255, 0.72);
+  color: #1d160f;
+  border-color: rgba(0, 0, 0, 0.08);
+}
+
+.pill-dark {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.09);
+  padding: 0.8rem 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.filter-chip {
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.75);
+  padding: 0.8rem 1rem;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(45, 33, 20, 0.72);
+  transition:
+    transform 180ms ease,
+    background 180ms ease,
+    color 180ms ease,
+    border-color 180ms ease;
+}
+
+.filter-chip:hover,
+.filter-chip.active {
+  transform: translateY(-1px);
+  border-color: rgba(212, 175, 55, 0.45);
+  background: linear-gradient(135deg, rgba(250, 235, 196, 0.96), rgba(244, 223, 179, 0.92));
+  color: #5e4510;
+}
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 700ms ease,
+    transform 700ms ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media (min-width: 768px) {
+  .section-shell {
+    padding-inline: 2rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+  }
+}
