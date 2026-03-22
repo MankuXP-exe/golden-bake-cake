@@ -490,31 +490,6 @@ export function SiteClient({ categories, products }: SiteClientProps) {
                     </span>
                   </div>
                 </div>
-                <div
-                  className="floating-card rounded-[32px] border border-[#f5db84]/18 bg-[linear-gradient(140deg,rgba(255,255,255,0.1),rgba(16,10,7,0.2))] p-6 text-white shadow-[0_22px_60px_rgba(20,13,8,0.18)] backdrop-blur-xl md:col-span-2 lg:col-span-1"
-                  data-reveal
-                >
-                  <p className="text-xs uppercase tracking-[0.32em] text-[#f3d991]">
-                    Visual mood
-                  </p>
-                  <div className="mt-5 grid grid-cols-[1.1fr_0.9fr] gap-4">
-                    <div className="rounded-[26px] border border-white/12 bg-[linear-gradient(160deg,rgba(255,247,226,0.94),rgba(243,221,170,0.82))] p-5 text-stone-900 shadow-[inset_0_1px_0_rgba(255,255,255,0.5)]">
-                      <p className="text-[11px] uppercase tracking-[0.28em] text-[#8d6915]">
-                        Golden layer
-                      </p>
-                      <p className="mt-4 font-[family:var(--font-display)] text-3xl leading-none">
-                        Luxe
-                      </p>
-                      <p className="mt-3 text-sm leading-6 text-stone-700">
-                        Paris-inspired warmth with Indian celebration energy.
-                      </p>
-                    </div>
-                    <div className="space-y-4">
-                      <div className="h-24 rounded-[24px] border border-white/14 bg-[radial-gradient(circle_at_top,rgba(255,240,198,0.9),rgba(212,175,55,0.28)_42%,rgba(255,255,255,0.06)_100%)]" />
-                      <div className="h-28 rounded-[24px] border border-white/14 bg-[linear-gradient(140deg,rgba(255,255,255,0.12),rgba(44,28,18,0.42))]" />
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
